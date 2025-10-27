@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Learning 3D Object Spatial Relationships from Pre-trained 2D Diffusion Models">
+  <meta property="og:title" content="OOR"/>
+  <meta property="og:description" content="Project page for Learning 3D Object Spatial Relationships from Pre-trained 2D Diffusion Models"/>
+  <meta property="og:url" content="https://tlb_miss.github.io/oor" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/images/teaser.png" />
+  <meta property="og:image:width" content="2986"/>
+  <meta property="og:image:height" content="1068"/>
+
+
+  <meta name="twitter:title" content="OOR">
+  <meta name="twitter:description" content="Learning 3D Object Spatial Relationships from Pre-trained 2D Diffusion Models">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/teaser.png">
+  <meta name="twitter:card" content="OOR">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="oor">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Learning 3D Object Spatial Relationships from Pre-trained 2D Diffusion Models</title>
+  <link rel="icon" type="image/x-icon" href="static/images/logo.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  integrity="sha384-KCoi1hWvqIEzUpQkr0/eqz25VwvpkQ+gSTsaZfGUO+S4zESTXZuAZS86EANASVca" crossorigin="anonymous"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+  integrity="sha384-cxs0Bj979VdNByRZzAJ2KJWG8vH/kG7fwWZAIZW3Tmsw0rAuP/pu3I3LitFWEs18" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+  integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+  crossorigin="anonymous"></script>
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"
+  integrity="sha384-/r+//Gr1EDmAtu40BA3mLUNz1fa0zSRzML/uhwUi7y0V7QulZ9Z8QDvvHJlATHx6"
+  crossorigin="anonymous"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <script type="text/javascript" async
+  src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async
+    id="MathJax-script"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Learning 3D Object Spatial Relationships from Pre-trained 2D Diffusion Models</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://tlb-miss.github.io/" target="_blank">Sangwon Baik<sup>1</sup></a>,&nbsp
+              </span>
+                <span class="author-block">
+                  <a href="https://www.sshowbiz.xyz" target="_blank">Hyeonwoo Kim<sup>1</sup></a>,&nbsp
+                </span>
+                  <span class="author-block">
+                    <a href="https://jhugestar.github.io" target="_blank">Hanbyul Joo<sup>1,2</sup></a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Seoul National University,&nbsp</span><span class="author-block"><sup>2</sup>RLWRLD</span>
+                    <!--<span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>-->
+                  </div>
+                  
+                  <div class="columns is-centered">
+                    <div class="is-size-4 publication-venue">ICCV 2025
+                    </div>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2503.19914" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/snuvclab/oor" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/teaser.png" alt="Teaser Image"/>
+      <h2 class="subtitle has-text-centered">
+        Given a textual description of the spatial relationship between two objects, our method models OOR, representing their relative poses and scales according to the text. We obtain OOR samples using off-the-shelf models and a proposed mesh registration method, then learn their distribution through diffusion. During inference, our OOR diffusion model generates OOR conditioned on the text input.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present a method for learning 3D spatial relationships between object pairs, referred to as object-object spatial relationships (OOR), by leveraging synthetically generated 3D samples from pre-trained 2D diffusion models. We hypothesize that images synthesized by 2D diffusion models inherently capture plausible and realistic OOR cues, enabling efficient ways to collect a 3D dataset to learn OOR for various unbounded object categories. Our approach begins by synthesizing diverse images that capture plausible OOR cues, which we then uplift into 3D samples. Leveraging our diverse collection of plausible 3D samples for the object pairs, we train a score-based OOR diffusion model to learn the distribution of their relative spatial relationships. Additionally, we extend our pairwise OOR to multi-object OOR by enforcing consistency across pairwise relations. Extensive experiments demonstrate the robustness of our method across various object-object spatial relationships, along with its applicability to real-world 3D scene arrangement tasks using the OOR diffusion model.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Method -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h2 class="title is-3">Method Overview</h2>
+      <img src="static/images/method_db_gen.png" alt="Method Image" style="width: 65%;"/>
+      <div style="max-width: 900px; margin: 0 auto; text-align: center; line-height: 1.6;">
+        For a given text prompt related to an object pair, we obtain multi-view images and point clouds using off-the-shelf models.
+        Then, we lift pixel features to obtain 3D point features. We repeat the same process for the rendered images of collected meshes.
+        Finally, we perform Procrustes analysis with RANSAC to estimate the relative pose and scale of each object.
+      </div>
+
+      <br>
+      <br>
+
+      <img src="static/images/method_diffusion.png" alt="Method Image" style="width: 50%;"/>
+      <div style="max-width: 1000px; margin: 0 auto; text-align: center; line-height: 1.6;">
+        Our OOR diffusion generates OOR samples by taking the context 
+        \( \mathbf{c} \), base object category \( \mathcal{B} \), 
+        and target object category \( \mathcal{T} \) as text conditions.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video presentation -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-fullwidth">
+          
+          <video controls style="width: 100%; max-width: 1600px;">
+            <source src="static/videos/OOR_video.mp4" type="video/mp4">
+          </video>
+          <!--<div class="publication-video">-->
+            <!-- Youtube embed code here -->
+            <!--<iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Results -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h2 class="title is-3">Results</h2>
+      
+      <!-- Pairwise OOR Section -->
+      <h3 class="title is-4" style="margin-top: 50px;">Denoising Process of Pairwise OOR Generation</h3>
+      <div id="pairwise-carousel" class="carousel results-carousel">
+        <!-- Loop: 각 동영상 항목 -->
+        <div class="item">
+          <video controls autoplay loop muted>
+            <source src="static/videos/nail_hammer_0.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered"><i>A hammer drives a nail.</i></h2>
+        </div>
+
+        <div class="item">
+          <video controls autoplay loop muted>
+            <source src="static/videos/teacup_teapot_2.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered"><i>A teapot pours tea into a teacup.</i></h2>
+        </div>
+
+        <div class="item">
+          <video controls autoplay loop muted>
+            <source src="static/videos/steak_fork_6.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered"><i>A fork pokes a steak.</i></h2>
+        </div>
+
+        <div class="item">
+          <video controls autoplay loop muted>
+            <source src="static/videos/toilet_plunger_4.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered"><i>A plunger unclogs a toilet.</i></h2>
+        </div>
+
+        <div class="item">
+          <video controls autoplay loop muted>
+            <source src="static/videos/desk_monitor_68.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered"><i>A monitor is positioned on a desk.</i></h2>
+        </div>
+      </div>
+
+      <!-- Multi-object OOR Section -->
+      <h3 class="title is-4" style="margin-top: 100px;">Denoising Process of Multi-object OOR Generation</h3>
+      <div id="multiobject-carousel" class="carousel results-carousel">
+        <!-- Loop: 각 동영상 항목 -->
+        <div class="item">
+          <video controls autoplay loop muted>
+            <source src="static/videos/desk_monitor_keyboard_mouse_113.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered"><i>A monitor is positioned on a desk.</i><br>+<br><i>A keyboard is in front of a monitor.</i><br>+<br><i>A keyboard is positioned on a desk.</i><br>+<br><i>A mouse is next to a keyboard.</i></h2>
+        </div>
+
+        <div class="item">
+          <video controls autoplay loop muted>
+            <source src="static/videos/pan_salt_shakers_3.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered"><i>A salt shaker sprinkles salt into a pan.</i> &times; 4</h2>
+        </div>
+
+        <div class="item">
+          <video controls autoplay loop muted>
+            <source src="static/videos/cutting_board_apple_knife_5.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered"><i>An apple is positioned on a cutting board.</i><br>+<br><i>A knife cuts an apple.</i></h2>
+        </div>
+      </div>
+
+      <!-- Scene Editing Section -->
+      <h3 class="title is-4" style="margin-top: 100px;">Scene Editing</h3>
+      <div id="scene-editing-carousel" class="carousel results-carousel">
+        <!-- Loop: 각 동영상 항목 -->
+        <div class="item">
+          <video controls autoplay loop muted style="height: 800px; width: auto; object-fit: contain;">
+            <source src="static/videos/denoising_process.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">Denoising process for noisy scene.</h2>
+        </div>
+        <div class="item">
+          <video controls autoplay loop muted style="height: 800px; width: auto; object-fit: contain;">
+            <source src="static/videos/teacup_teapot.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">Applying new context</h2>
+        </div>
+        <div class="item">
+          <video controls autoplay loop muted style="height: 800px; width: auto; object-fit: contain;">
+            <source src="static/videos/pan_salt_saker.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">Adding object + Applying new context</h2>
+        </div>
+      </div>
+
+      <!-- Human Motion Synthesis Section -->
+      <h3 class="title is-4" style="margin-top: 100px;">Human Motion Synthesis</h3>
+      <div id="hms-carousel" class="carousel results-carousel">
+        <!-- Loop: 각 동영상 항목 -->
+        <div class="item">
+          <video controls autoplay loop muted style="height: 800px; width: auto; object-fit: contain;">
+            <source src="static/videos/hms_1.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered"><i>A person pours tea from a teapot into a teacup.</i></h2>
+        </div>
+        <div class="item">
+          <video controls autoplay loop muted style="height: 800px; width: auto; object-fit: contain;">
+            <source src="static/videos/hms_2.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered"><i>A person cuts an apple with a knife.</i></h2>
+        </div>
+        <div class="item">
+          <video controls autoplay loop muted style="height: 800px; width: auto; object-fit: contain;">
+            <source src="static/videos/hms_3.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered"><i>A person hangs a hat on a coat stand.</i></h2>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{oor,
+      title={Learning 3D Object Spatial Relationships from Pre-trained 2D Diffusion Models}, 
+      author={Sangwon Baik and Hyeonwoo Kim and Hanbyul Joo},
+      booktitle = ICCV,
+      year={2025}
+}
+</code></pre>
+  </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
